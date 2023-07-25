@@ -4,7 +4,6 @@ const ColorModeSwitch = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   return (
     <Button
-      variant={"outline"}
       bg={colorMode === "dark" ? "gray.700" : "gray.200"}
       aria-label="Switch Mode"
       onClick={toggleColorMode}
