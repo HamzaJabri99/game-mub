@@ -4,9 +4,10 @@ import GenreListItemSkeleton from "./GenreListItemSkeleton";
 import GenreListItem from "./GenreListItem";
 interface Props {
   onSelectGenre: (genre: Genre) => void;
+  selectedGenre: Genre | null;
 }
 
-const GenreList = ({ onSelectGenre }: Props) => {
+const GenreList = ({ onSelectGenre, selectedGenre }: Props) => {
   const { data, error, isLoading } = useGenres();
   const skeletons = Array.from(Array(19).keys());
   if (error) return <Text color="red">Something Went Wrong</Text>;
@@ -20,7 +21,12 @@ const GenreList = ({ onSelectGenre }: Props) => {
   return (
     <List marginTop="4rem">
       {data.map((genre) => (
-        <GenreListItem key={genre.id} genre={genre} onSelectGenre={onSelectGenre} />
+        <GenreListItem
+          key={genre.id}
+          genre={genre}
+          onSelectGenre={onSelectGenre}
+          selectedGenre={selectedGenre}
+        />
       ))}
     </List>
   );

@@ -4,8 +4,9 @@ import { Genre } from "../hooks/useGenres";
 interface Props {
   genre: Genre;
   onSelectGenre: (genre: Genre) => void;
+  selectedGenre: Genre | null;
 }
-const GenreListItem = ({ genre, onSelectGenre }: Props) => {
+const GenreListItem = ({ genre, onSelectGenre, selectedGenre }: Props) => {
   return (
     <ListItem paddingY="10px">
       <HStack>
@@ -20,6 +21,7 @@ const GenreListItem = ({ genre, onSelectGenre }: Props) => {
           fontSize="lg"
           variant="link"
           whiteSpace="pre-wrap"
+          fontWeight={genre.id === selectedGenre?.id ? "bold" : "normal"}
         >
           {genre.name}
         </Button>
