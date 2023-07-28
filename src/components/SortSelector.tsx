@@ -41,7 +41,6 @@ const SortSelector = ({ onSelectSortOrder, selectedSortOrder }: Props) => {
   const currentSortOrder = sortOrders.find(
     (order) => order.value === selectedSortOrder
   );
-  console.log(currentSortOrder);
   return (
     <Box marginTop="4rem">
       <Menu>
