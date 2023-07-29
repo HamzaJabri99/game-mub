@@ -21,6 +21,8 @@ Start dev server (with hot reloading):
 ```bash
 npm run dev
 ```
+Get your RAWG AKI Key
+https://rawg.io/apidocs
 
 Build for production with minification to the `dist` folder:
 
