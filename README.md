@@ -12,6 +12,7 @@ https://game-mub.vercel.app/
 
 1. Clone this repository to your local machine.
 2. Get your RAWG AKI Key https://rawg.io/apidocs.
+3. Add the API key to **src/services/api-client.ts**
 
 ```bash
 npm install
