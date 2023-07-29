@@ -10,7 +10,8 @@ You can visit online version here:
 
 https://game-mub.vercel.app/
 
-Clone the repo or download it, and install dependencies:
+1. Clone this repository to your local machine.
+2. Get your RAWG AKI Key https://rawg.io/apidocs.
 
 ```bash
 npm install
@@ -21,15 +22,14 @@ Start dev server (with hot reloading):
 ```bash
 npm run dev
 ```
-Get your RAWG AKI Key
-https://rawg.io/apidocs
+
 
 Build for production with minification to the `dist` folder:
 
 ```bash
 npm run build
 ```
-&bnsp;
+&nbsp;
 ## License
 
 [MIT](MIT)
