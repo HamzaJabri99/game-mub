@@ -20,17 +20,17 @@ const GenreList = ({ onSelectGenre, selectedGenre }: Props) => {
 
   return (
     <>
-    <Heading fontSize="2xl">Genres </Heading>
-    <List marginTop={3}>
-      {data.map((genre) => (
-        <GenreListItem
-          key={genre.id}
-          genre={genre}
-          onSelectGenre={onSelectGenre}
-          selectedGenre={selectedGenre}
-        />
-      ))}
-    </List>
+      <Heading fontSize="2xl">Genres </Heading>
+      <List marginTop={3}>
+        {data?.results.map((genre: Genre) => (
+          <GenreListItem
+            key={genre.id}
+            genre={genre}
+            onSelectGenre={onSelectGenre}
+            selectedGenre={selectedGenre}
+          />
+        ))}
+      </List>
     </>
   );
 };
