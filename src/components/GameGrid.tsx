@@ -4,12 +4,11 @@ import useGames from "../hooks/useGames";
 import GameCard from "./GameCard";
 import GameCardSkeleton from "./GameCardSkeleton";
 import GameCardContainer from "./GameCardContainer";
-import { GameQuery } from "../App";
 import InfiniteScroll from "react-infinite-scroll-component";
-interface Props {
-  gameQuery: GameQuery;
-}
-const GameGrid = ({ gameQuery }: Props) => {
+import useGameQueryStore from "../store";
+
+const GameGrid = () => {
+  const { gameQuery } = useGameQueryStore();
   const { data, error, isLoading, fetchNextPage, hasNextPage } =
     useGames(gameQuery);
   const skeletons = Array.from(Array(16).keys());
