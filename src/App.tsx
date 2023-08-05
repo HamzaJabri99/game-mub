@@ -5,8 +5,11 @@ import GenreList from "./components/GenreList";
 import PlatformSelector from "./components/PlatformSelector";
 import SortSelector from "./components/SortSelector";
 import GameHeading from "./components/GameHeading";
+import useGameQueryStore from "./store";
 
 const App = () => {
+  const { gameQuery } = useGameQueryStore();
+  console.log(gameQuery);
   // const [gameQuery, setGameQuery] = useState<GameQuery>({} as GameQuery);
   // const handleGenreChange = (genreId: number) => {
   //   setGameQuery({ ...gameQuery, genreId });
