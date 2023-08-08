@@ -7,7 +7,8 @@ import {
   ListItem,
   Text,
 } from "@chakra-ui/react";
-import useGenres, { Genre } from "../hooks/useGenres";
+import useGenres from "../hooks/useGenres";
+import { Genre } from "../entities/Genre";
 import GenreListItemSkeleton from "./GenreListItemSkeleton";
 import getCroppedImageUrl from "../services/img-url";
 import useGameQueryStore from "../store";
