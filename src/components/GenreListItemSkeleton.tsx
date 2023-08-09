@@ -12,7 +12,9 @@ const GenreListItemSkeleton = () => {
       <Skeleton height={"30px"}>
         <HStack>
           <SkeletonCircle size="4" />
-          <SkeletonText noOfLines={2} fontSize="lg">loading</SkeletonText>
+          <SkeletonText noOfLines={2} fontSize="lg">
+            loading
+          </SkeletonText>
         </HStack>
       </Skeleton>
     </ListItem>

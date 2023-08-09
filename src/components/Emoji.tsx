@@ -1,8 +1,8 @@
-import thumbsUp from "../assets/thumbs-up_1f44d.png";
-import meh from "../assets/unamused-face_1f612.png";
+import { Image, ImageProps } from "@chakra-ui/react";
 import bullsEye from "../assets/direct-hit_1f3af.png";
 import thumbsDown from "../assets/thumbs-down_1f44e.png";
-import { Image, ImageProps } from "@chakra-ui/react";
+import thumbsUp from "../assets/thumbs-up_1f44d.png";
+import meh from "../assets/unamused-face_1f612.png";
 interface Props {
   rating: number;
 }
